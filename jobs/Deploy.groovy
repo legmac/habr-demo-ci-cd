@@ -52,7 +52,7 @@ spec:
                         def revision = params.VERSION.substring(0, 7)
                         withCredentials([[
                                 $class: 'UsernamePasswordMultiBinding',
-                                credentialsId: 'github',
+                                credentialsId: 'legmac',
                                 usernameVariable: 'USERNAME',
                                 passwordVariable: 'PASSWORD'
                         ]]) {
