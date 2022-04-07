@@ -70,6 +70,7 @@ spec:
                 container('helm-cli') {
                     script {
                         dir ("${params.GIT_REPO}") {
+                            sh 'sleep 1000'
                             sh "./helm/setRevision.sh ${params.VERSION}"
                             sh "cat ./helm/setRevision.sh"
                             //def registryIp = sh(script: 'getent hosts registry.kube-system | awk \'{ print $1 ; exit }\'', returnStdout: true).trim()
