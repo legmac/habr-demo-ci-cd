@@ -3,7 +3,7 @@ properties([
                 [
                         stringParam(
                                 name: 'GIT_REPO',
-                                defaultValue: ''
+                                defaultValue: 'habr-demo-app'
                         ),
                         stringParam(
                                 name: 'VERSION',
