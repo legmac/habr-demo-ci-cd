@@ -56,7 +56,7 @@ spec:
                                 usernameVariable: 'USERNAME',
                                 passwordVariable: 'PASSWORD'
                         ]]) {
-                            sh "git clone https://$USERNAME:$PASSWORD@github.com/gmandnepr/${params.GIT_REPO}.git"
+                            sh "git clone https://$USERNAME:$PASSWORD@github.com/legmac/${params.GIT_REPO}.git"
                             dir ("${params.GIT_REPO}") {
                                 sh "git checkout ${revision}"
                             }
